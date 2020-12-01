@@ -9,12 +9,12 @@ renderMainPage();
 renderPage(about)();
 
 const tabs = [
-  {id: 'menuButton', render: renderPage(menu)},
-  {id: 'aboutButton', render: renderPage(about)},
-  {id: 'contactButton', render: renderPage(contact)},
+  { id: 'menuButton', render: renderPage(menu) },
+  { id: 'aboutButton', render: renderPage(about) },
+  { id: 'contactButton', render: renderPage(contact) },
 ];
 
 tabs.forEach(tab => {
   const tabButton = document.getElementById(tab.id);
-  tabButton.addEventListener('click', tab.render)
+  tabButton.addEventListener('click', tab.render);
 });
