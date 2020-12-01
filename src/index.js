@@ -1,4 +1,7 @@
-import { bro } from './bro';
 import './styles/main.css';
+import { renderPage } from './modules/helper'
+import { menu } from './modules/menu';
 
-console.log(bro('Dude'));
+const tabs = [
+  {id: 'menuButton', render: renderPage(menu)},
+];
